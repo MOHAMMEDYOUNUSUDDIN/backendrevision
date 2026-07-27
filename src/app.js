@@ -4,14 +4,21 @@ const app = express();
 
 const notes = [] ///temp database
 
-app.get('/hello',(req,res)=>{
+app.get('/notes',(req,res)=>{
     
-    res.send("Hello Guys!")
+    res.status(200).json({
+        message:"All data Feteched Sucessfully"
+    })
+    
     
 })
 
-app.get('/post',(req,res)=>{
-    res.send("All data recieved!")
+app.post('/notes',(req,res)=>{
+    notes.push(req.body)
+    
+    res.status(201).json({
+        message:"Notes Created Sucessfully"
+    })
 })
 
 
