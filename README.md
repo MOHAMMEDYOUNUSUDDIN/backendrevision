@@ -1,6 +1,6 @@
 # Backend Revision 🚀
 
-A simple **Node.js + Express.js backend project** created for learning and revising the fundamentals of backend development and REST APIs.
+A simple **Node.js + Express.js backend project** created for learning and revising the fundamentals of backend development and REST APIs
 
 The project currently implements a basic **Notes API** using Express.js with an in-memory array as a temporary data store.
 
